@@ -1,5 +1,21 @@
 # Novità
 
+## 0.6.0 · 31 ottobre 2026
+
+- **La voce di WinGenius**: le risposte si possono ascoltare con una voce di Windows. Su ogni risposta compare il
+  pulsante «Leggi» (passando il mouse sul messaggio); l'interruttore accanto al microfono le legge tutte da sole
+  appena complete; con «Leggi dopo la dettatura» la risposta a una domanda dettata viene letta anche a interruttore
+  spento, per una conversazione a mani libere. Elenchi, tabelle e comandi diventano frasi semplici e le unità di
+  misura si leggono per esteso. Accanto alle voci classiche ci sono quelle moderne di Windows 10 e 11 (Elsa, Cosimo),
+  più naturali. Voce, velocità e prova in Impostazioni → Voce. Il microfono che si apre ferma la lettura.
+- **Telegram con messaggio vocale**: dopo il testo arriva anche un vocale con la versione parlata dell'avviso, da
+  ascoltare in auto o senza guardare lo schermo. L'assistente scrive da sé la frase da leggere (nuovo parametro
+  `spoken` di send_notification); per gli avvisi automatici la compone il programma. Se il vocale non parte, il testo
+  arriva comunque e il motivo compare in «Ultime consegne» sulla riga «Telegram (vocale)». L'opzione «Messaggio
+  vocale» è nella scheda Telegram, attiva; la prova di collegamento lo include.
+- **Gemini 4 Argon**: nelle installazioni nuove il modello predefinito per Google è `gemini-4-argon`; chi ha già
+  scelto un modello lo mantiene.
+
 ## 0.5.1 · 31 ottobre 2026
 
 - **Dettatura**: corretto un arresto improvviso dell'applicazione (errore di accesso alla memoria) che

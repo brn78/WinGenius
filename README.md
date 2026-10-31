@@ -140,13 +140,17 @@ molte modifiche fallirebbero (te lo segnala e offre il riavvio elevato).
   dominio.
 - **Notifiche** per e-mail e Telegram: passi in attesa di approvazione, riavvii avvenuti, piani
   conclusi o falliti, dispositivi nuovi in rete, avvisi di accesso, routine fallite. Si configurano
-  e si provano dalle Impostazioni → Notifiche; password e token stanno nella cassaforte.
+  e si provano dalle Impostazioni → Notifiche; password e token stanno nella cassaforte. Su Telegram
+  dopo il testo arriva anche un **messaggio vocale** con la versione parlata dell'avviso, da
+  ascoltare in auto o senza guardare lo schermo (si può spegnere).
 - **Routine pianificate**: gli script della libreria eseguiti a orario (ogni giorno, settimanale,
   mensile, ogni N ore), con esito e avviso quando qualcosa fallisce.
-- **Area di notifica e dettatura**: icona accanto all'orologio con menu rapido e fumetti per gli
-  avvisi; pulsante microfono con riconoscimento locale (il modello si scarica una volta, nulla esce
-  dalla macchina). Nelle Impostazioni → Programma scegli il nome del tuo assistente e come deve
-  chiamarti.
+- **Area di notifica, dettatura e voce**: icona accanto all'orologio con menu rapido e fumetti per
+  gli avvisi; pulsante microfono con riconoscimento locale (il modello si scarica una volta, nulla
+  esce dalla macchina); le risposte si possono ascoltare con una voce di Windows, una alla volta con
+  «Leggi» o tutte da sole con l'interruttore accanto al microfono, e dopo una domanda dettata la
+  risposta arriva a voce per una conversazione a mani libere. Nelle Impostazioni → Programma scegli il
+  nome del tuo assistente e come deve chiamarti; in Impostazioni → Voce la voce e la velocità.
 
 ## Aggiornamenti
 
@@ -175,8 +179,9 @@ spegnere il controllo o farlo subito.
   non contengono segreti. Il servizio può usarle solo se gli concedi una copia della chiave: la
   custodisce protetta nel profilo del proprio account (LocalSystem), quindi un amministratore della
   macchina potrebbe in teoria leggerla; se la macchina non è solo tua, lascia la concessione spenta.
-- Le notifiche escono verso il server SMTP e il bot Telegram che configuri tu, con il solo testo
-  dell'avviso.
+- Le notifiche escono verso il server SMTP e il bot Telegram che configuri tu, con il testo
+  dell'avviso e, su Telegram se lo lasci attivo, un messaggio vocale generato sulla macchina con la
+  voce di Windows (nessun servizio esterno di sintesi).
 - La disinstallazione lascia `C:\ProgramData\WinGenius`: se non ti serve più, eliminala.
 
 ## Avvertenze e limitazione di responsabilità
