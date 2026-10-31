@@ -11,6 +11,25 @@ qualunque PC Windows.
 
 > Questa pagina distribuisce i pacchetti pronti all'uso. Il codice sorgente non è pubblico.
 
+## Uno sguardo
+
+![WinGenius analizza un host Hyper-V lento: istantanea, letture eseguite, cosa ha trovato e cosa propone](screenshots/conversation.png)
+
+Descrivi il problema con parole tue. Il genio raccoglie un'istantanea della macchina, esegue le
+letture che servono (ogni attività resta visibile nella cronologia a destra), spiega cosa ha
+trovato e propone cosa sistemare.
+
+| Il piano da approvare | L'approvazione di un comando |
+|---|---|
+| ![Piano di intervento a passi, ciascuno con rischio e rollback](screenshots/plan.png) | ![Richiesta di approvazione di comandi PowerShell con il livello di rischio](screenshots/approval.png) |
+
+Prima di toccare qualcosa propone un piano a passi, ognuno con il rischio e il rollback: puoi
+spegnere i passi che non vuoi, aggiungere condizioni o rifiutare. Ogni comando che modifica la
+macchina passa dall'approvazione, con il livello di rischio in evidenza.
+
+Le schermate sono dimostrative: mostrano dati di esempio e un'istantanea dell'interfaccia, che
+con le versioni successive può cambiare nei dettagli.
+
 ## Scarica
 
 Dalla pagina [Releases](../../releases/latest):
@@ -26,7 +45,7 @@ Entrambi i pacchetti includono il runtime .NET: non serve installare altro.
 Per verificare un file scaricato:
 
 ```powershell
-Get-FileHash .\WinGenius-0.2.0-Setup.exe -Algorithm SHA256
+Get-FileHash .\WinGenius-<versione>-Setup.exe -Algorithm SHA256
 ```
 
 e confronta il risultato con la riga corrispondente di `SHA256SUMS.txt`.

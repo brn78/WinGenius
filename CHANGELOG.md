@@ -1,5 +1,12 @@
 # Novità
 
+## 0.5.1 · 31 ottobre 2026
+
+- **Dettatura**: corretto un arresto improvviso dell'applicazione (errore di accesso alla memoria) che
+  poteva capitare fermando il microfono mentre si stava già chiudendo, per esempio con un clic rapido
+  sul pulsante o annullando subito dopo l'avvio. Ora il dispositivo si apre, si ferma e si chiude un
+  thread alla volta e ogni registrazione si conclude una volta sola.
+
 ## 0.5.0 · 31 ottobre 2026
 
 - **Servizio Windows «WinGenius Agent»**: il motore gira in sottofondo come LocalSystem, parte con
