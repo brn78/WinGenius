@@ -116,7 +116,9 @@ per cambiare idea). Con il servizio installato l'avviso non serve: i comandi li 
   della macchina (`C:\ProgramData\WinGenius`), consultabile dall'app. Le conversazioni si
   riprendono: all'avvio ti propone l'ultima recente, e da Memoria → Conversazioni ogni
   conversazione ha «Riprendi»; il genio ricorda tutto quello che c'era, anche se nel frattempo
-  hai riavviato o cambiato cervello.
+  hai riavviato o cambiato cervello. Se WinGenius si chiude senza che tu lo chieda (un
+  aggiornamento, il passaggio ad amministratore, la fine della sessione di Windows), al riavvio la
+  conversazione aperta torna da sola, con la sua linea del tempo e il contatore dei token.
 - **Parla come vuoi tu**: in Impostazioni → Cervello scegli lo stile delle risposte
   (professionale, tecnico, alla mano, conciso o le tue istruzioni) e, se vuoi, un modello veloce
   per i sotto-compiti semplici e uno potente per le analisi difficili: il genio li usa da solo,

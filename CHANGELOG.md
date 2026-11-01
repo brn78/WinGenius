@@ -1,5 +1,21 @@
 # Novità
 
+## 0.9.3 · 1 novembre 2026
+
+- **La conversazione torna da sola dopo un riavvio non richiesto**: quando WinGenius si chiudeva per un aggiornamento,
+  per il passaggio ad amministratore o per la fine della sessione di Windows, ripartiva sulla schermata iniziale e
+  quello che stavi facendo restava solo dietro la proposta «Riprendi». Ora la finestra tiene un segnalibro della
+  conversazione aperta (`%LOCALAPPDATA%\WinGenius\session.json`), che sparisce solo se esci tu: al riavvio la
+  conversazione riappare da sola con le sue schede nella linea del tempo, una riga dice perché («Ripresa da sola dopo
+  l'aggiornamento alla 0.9.3») e il genio continua da lì, in locale o nel servizio. Vale anche per una chiusura
+  improvvisa, se la conversazione era attiva nelle ultime due ore.
+- **Il contatore dei token non riparte da zero**: i token di ogni risposta si salvano nella conversazione (colonne
+  `tokens_in` e `tokens_out`, aggiunte alle basi dati esistenti) e una conversazione ripresa riparte dal totale che
+  aveva, anche con un altro cervello.
+- **Note di versione impaginate**: nella finestra «Aggiornamento disponibile» le novità andavano a capo a metà frase,
+  perché il CHANGELOG è scritto a righe corte. Ora le righe spezzate a mano si riuniscono, sia nelle note pubblicate con
+  la release sia nella finestra (`MarkdownText.Unwrap`).
+
 ## 0.9.2 · 1 novembre 2026
 
 - **Le condizioni scritte sul piano prevalgono**: quello che scrivi in «Commento o condizioni» approvando (o rifiutando)
