@@ -1,5 +1,19 @@
 # Novità
 
+## 0.8.2 · 1 novembre 2026
+
+- **Modello sovraccarico: si riprova da soli**: quando il provider risponde 503 («il modello è molto richiesto»), 429
+  o un altro errore passeggero, oppure la rete si inceppa, il genio riprova fino a tre volte con attese crescenti
+  (3, 8 e 15 secondi) scrivendo nello stato cosa sta succedendo; «Prova il cervello attivo» riprova una volta.
+- **Errori dei provider spiegati**: al posto del JSON grezzo compare una frase in italiano con il codice e cosa fare
+  (sovraccarico → aspetta o scegli un altro modello dall'Elenco; 429 → quota o limite; 401/403 → chiave; 404 → modello
+  non trovato), con il messaggio originale del provider in coda.
+- **Gemini pensante e strumenti**: i modelli Gemini dalla famiglia 3 in su allegano a ogni chiamata di funzione una
+  firma del ragionamento (`thoughtSignature`) e rifiutano il passo successivo se non la ricevono indietro («Function
+  call is missing a thought_signature», errore 400 dopo il primo comando). Ora la firma si conserva con la chiamata,
+  anche nella memoria, e si rimanda tale e quale; per le conversazioni nate prima si salta la verifica come
+  documentato da Google.
+
 ## 0.8.1 · 1 novembre 2026
 
 - **«Scarica e installa» ora installa davvero**: il setup silenzioso chiedeva a WinGenius di chiudersi tramite il
