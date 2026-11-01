@@ -1,5 +1,23 @@
 # Novità
 
+## 1.0.0 · 1 novembre 2026
+
+- **Apprendimento: il genio impara chi lo usa.** Un profilo dell'operatore che cresce con l'uso: preferenze durevoli,
+  correzioni («non fare più…»), modi di dire e nomi che dai alle cose, compiti ricorrenti, decisioni prese insieme,
+  ambiente. Entra in testa a ogni richiesta, curato e breve, e rifinisce lo stile scelto; se una voce contraddice la
+  richiesta di oggi vale la richiesta. Lo alimentano tre fonti: il genio stesso quando nota una preferenza o una
+  correzione (`profile_learn`, spegnibile), i pollici su e giù sotto le risposte con una nota facoltativa (la nota
+  diventa subito una correzione o una preferenza), e un consolidamento periodico in cui il modello veloce rilegge le
+  conversazioni recenti e i giudizi, fonde le voci doppie e toglie quelle superate (all'avvio quando l'intervallo è
+  scaduto, in silenzio; un avviso solo se ha imparato qualcosa).
+- **Memoria → «Cosa so di te»**: tutto quello che ha imparato, per categoria, con fonte, data e conferme. Ogni voce si
+  corregge, si spegne o si cancella; le voci scritte o corrette da te sono protette dal consolidamento; «Consolida
+  adesso», «Dimentica tutto» e gli ultimi giudizi dati alle risposte. Trasparenza e controllo restano tuoi.
+- **Suggerimenti imparati**: le richieste che tornano compaiono come schede pronte nella schermata iniziale, sotto
+  quelle fisse.
+- **Impostazioni → Cervello → Apprendimento**: interruttore generale, «il genio annota da solo», consolidamento e suo
+  intervallo (da 6 ore a una settimana), suggerimenti.
+
 ## 0.9.3 · 1 novembre 2026
 
 - **La conversazione torna da sola dopo un riavvio non richiesto**: quando WinGenius si chiudeva per un aggiornamento,

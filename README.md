@@ -123,6 +123,13 @@ per cambiare idea). Con il servizio installato l'avviso non serve: i comandi li 
   (professionale, tecnico, alla mano, conciso o le tue istruzioni) e, se vuoi, un modello veloce
   per i sotto-compiti semplici e uno potente per le analisi difficili: il genio li usa da solo,
   sempre con le stesse regole e le stesse approvazioni.
+- **Impara chi lo usa**: con l'uso costruisce un profilo di te, preferenze durevoli, correzioni
+  («non fare più…»), i nomi che dai alle cose, le richieste che tornano, le decisioni prese insieme,
+  e lo applica a ogni risposta. Lo alimentano il genio stesso quando nota qualcosa, i pollici su e
+  giù sotto le risposte (con una nota, se vuoi) e un consolidamento periodico che rilegge le
+  conversazioni recenti. In Memoria → «Cosa so di te» vedi tutto, correggi, spegni o cancelli ogni
+  voce: trasparenza e controllo restano tuoi. Le richieste che tornano diventano schede pronte nella
+  schermata iniziale. Tutto si spegne da Impostazioni → Cervello → Apprendimento.
 - **Il testo si porta via**: su ogni messaggio ci sono «Copia» e «Seleziona il testo», ogni
   blocco di codice ha il suo «Copia», e con il tasto destro copi o salvi l'intera conversazione.
 - **Credenziali per altri host** vengono chieste in una finestra dell'app, custodite nella
