@@ -1,5 +1,20 @@
 # Novità
 
+## 1.1.0 · 1 novembre 2026
+
+- **Risposte da Telegram** (Impostazioni → Notifiche → «Risposte da Telegram»): quando una richiesta del genio aspetta te
+  (un comando o un piano da approvare, una domanda) e nessuna finestra risponde, il servizio la manda nella chat del bot
+  con i pulsanti «Approva» e «Rifiuta» e le istruzioni per scrivere. Si risponde anche a parole: «#12 sì», «#12 no:
+  motivo», «#12 sì senza 2,3» per escludere passi di un piano, «#12 sì: manda i file nel cestino» per condizioni
+  vincolanti, la risposta a una domanda rispondendo al suo messaggio; con una sola richiesta in sospeso il numero si
+  può omettere; «stato» elenca le richieste in sospeso e «aiuto» i comandi. La richiesta parte subito se nessuna
+  finestra è collegata, altrimenti dopo un minuto e mezzo se la finestra non ha risposto; la prima risposta vince e
+  l'altra parte viene avvisata. Viene ascoltata solo la chat con il chat id delle Impostazioni; credenziali e sblocco
+  della cassaforte restano nella finestra. Serve il servizio in esecuzione con la cassaforte aperta.
+- **Consolidamento del profilo anche dal servizio**: sulle macchine dove la finestra si apre di rado il servizio
+  rilegge le conversazioni recenti ogni venti minuti di controllo, quando l'intervallo è scaduto e la cassaforte è
+  aperta; la finestra collegata al servizio glielo lascia fare.
+
 ## 1.0.0 · 1 novembre 2026
 
 - **Apprendimento: il genio impara chi lo usa.** Un profilo dell'operatore che cresce con l'uso: preferenze durevoli,

@@ -188,6 +188,13 @@ per cambiare idea). Con il servizio installato l'avviso non serve: i comandi li 
   e si provano dalle Impostazioni → Notifiche; password e token stanno nella cassaforte. Su Telegram
   dopo il testo arriva anche un **messaggio vocale** con la versione parlata dell'avviso, da
   ascoltare in auto o senza guardare lo schermo (si può spegnere).
+- **Rispondi da Telegram**: con «Risposte da Telegram» acceso, quando il genio aspetta te (un comando
+  o un piano da approvare, una domanda) e nessuno risponde dalla finestra, il servizio manda la
+  richiesta nella chat del bot con i pulsanti «Approva» e «Rifiuta». Puoi anche scrivere: «#12 sì»,
+  «#12 no: motivo», «#12 sì senza 2,3» per lasciare fuori dei passi, «#12 sì: manda i file nel
+  cestino» per condizioni che il genio deve rispettare, oppure rispondere al messaggio di una domanda.
+  «stato» elenca cosa aspetta, «aiuto» ricorda i comandi. Solo la chat con il tuo chat id viene
+  ascoltata; credenziali e sblocco della cassaforte restano nella finestra.
 - **Routine pianificate**: gli script della libreria eseguiti a orario (ogni giorno, settimanale,
   mensile, ogni N ore), con esito e avviso quando qualcosa fallisce.
 - **Area di notifica, dettatura e voce**: icona accanto all'orologio con menu rapido e fumetti per
