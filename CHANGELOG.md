@@ -1,5 +1,13 @@
 # Novità
 
+## 0.8.1 · 1 novembre 2026
+
+- **«Scarica e installa» ora installa davvero**: il setup silenzioso chiedeva a WinGenius di chiudersi tramite il
+  Restart Manager, ma WinGenius si riduceva nell'area di notifica invece di uscire; il setup trovava i file in uso,
+  annullava tutto senza dirlo e lasciava fermo il servizio. Ora WinGenius esce davvero quando glielo chiede un
+  programma di installazione (o taskkill), la finestra di aggiornamento chiude l'app per intero, l'installatore
+  chiude lui stesso le istanze rimaste prima di copiare i file e, se mai si interrompe, riavvia il servizio.
+
 ## 0.8.0 · 1 novembre 2026
 
 - **Widget flottante**: una pillola sempre in primo piano, da tenere dove vuoi sullo schermo (si trascina dall'orb e
