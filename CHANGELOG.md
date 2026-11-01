@@ -1,5 +1,15 @@
 # Novità
 
+## 0.9.2 · 1 novembre 2026
+
+- **Le condizioni scritte sul piano prevalgono**: quello che scrivi in «Commento o condizioni» approvando (o rifiutando)
+  un piano arrivava al genio come una nota in coda, facile da trascurare. Ora è vincolante: il risultato di
+  `propose_plan` si apre con le condizioni e dice al modello di rileggere ogni passo alla loro luce, di non eseguire i
+  passi che le contraddicono e di confermarti in una riga come le applica; le condizioni si salvano nel piano, si
+  ripetono a ogni `plan_step begin` e nella ripresa dopo un riavvio, e compaiono nel riepilogo del piano e nella linea
+  del tempo. Con un rifiuto commentato il genio ripropone un piano che rispetti il commento invece di chiedere da capo.
+  Nella finestra il pulsante diventa «Approva con le condizioni» appena scrivi qualcosa.
+
 ## 0.9.1 · 1 novembre 2026
 
 - **Claude e gli strumenti**: con un account Anthropic recente il secondo passo di ogni turno con un comando veniva

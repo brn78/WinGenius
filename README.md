@@ -109,7 +109,9 @@ per cambiare idea). Con il servizio installato l'avviso non serve: i comandi li 
   scelta ti mostra il comando e aspetta la tua approvazione. Riavvii, cancellazioni, dischi,
   VM, firewall e utenti chiedono sempre conferma.
 - **Prima di intervenire propone un piano** con passi, rischio e come tornare indietro: puoi
-  approvarlo, spegnere singoli passi o rifiutarlo con un commento.
+  approvarlo, spegnere singoli passi, scrivere condizioni («manda i file nel cestino», «fermati
+  dopo il passo 2») o rifiutarlo con un commento. Quello che scrivi prevale sul piano: il genio lo
+  rispetta a ogni passo e, se rifiuti, ripropone un piano che ne tenga conto.
 - **Ricorda**: ogni azione eseguita, con esito, e le note che prende restano nella memoria
   della macchina (`C:\ProgramData\WinGenius`), consultabile dall'app. Le conversazioni si
   riprendono: all'avvio ti propone l'ultima recente, e da Memoria → Conversazioni ogni
