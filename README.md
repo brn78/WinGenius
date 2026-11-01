@@ -108,7 +108,16 @@ molte modifiche fallirebbero (te lo segnala e offre il riavvio elevato).
 - **Prima di intervenire propone un piano** con passi, rischio e come tornare indietro: puoi
   approvarlo, spegnere singoli passi o rifiutarlo con un commento.
 - **Ricorda**: ogni azione eseguita, con esito, e le note che prende restano nella memoria
-  della macchina (`C:\ProgramData\WinGenius`), consultabile dall'app.
+  della macchina (`C:\ProgramData\WinGenius`), consultabile dall'app. Le conversazioni si
+  riprendono: all'avvio ti propone l'ultima recente, e da Memoria → Conversazioni ogni
+  conversazione ha «Riprendi»; il genio ricorda tutto quello che c'era, anche se nel frattempo
+  hai riavviato o cambiato cervello.
+- **Parla come vuoi tu**: in Impostazioni → Cervello scegli lo stile delle risposte
+  (professionale, tecnico, alla mano, conciso o le tue istruzioni) e, se vuoi, un modello veloce
+  per i sotto-compiti semplici e uno potente per le analisi difficili: il genio li usa da solo,
+  sempre con le stesse regole e le stesse approvazioni.
+- **Il testo si porta via**: su ogni messaggio ci sono «Copia» e «Seleziona il testo», ogni
+  blocco di codice ha il suo «Copia», e con il tasto destro copi o salvi l'intera conversazione.
 - **Credenziali per altri host** vengono chieste in una finestra dell'app, custodite nella
   cassaforte cifrata e consegnate a PowerShell solo per la durata del comando. Il modello non
   le vede mai e nell'output vengono oscurate.

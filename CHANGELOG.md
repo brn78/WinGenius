@@ -1,5 +1,36 @@
 # Novità
 
+## 0.9.0 · 1 novembre 2026
+
+- **Stile delle risposte** (Impostazioni → Cervello): Professionale, Tecnico, Alla mano, Conciso oppure Personalizzato
+  con le tue istruzioni. Cambia tono, lunghezza e forma di ogni risposta, con qualunque cervello; le regole di
+  sicurezza e le approvazioni restano le stesse.
+- **Ruoli dei modelli e delega**: oltre al cervello attivo si possono indicare un modello **veloce** (sotto-compiti
+  semplici e ripetitivi) e uno **potente** (analisi difficili), ciascuno con provider ed «Elenco» dei modelli. Con la
+  delega accesa il genio affida da solo i sotto-compiti a sub-agenti (`delegate_task`) che hanno gli stessi strumenti
+  e le stesse approvazioni ma non vedono la conversazione, e passa al modello potente (`escalate`) quando sente di non
+  bastare. Ogni sub-agente ha la sua conversazione in Memoria («↳ Sub-agente: …»), le sue attività compaiono nella
+  linea del tempo con il ruolo davanti e i suoi token si sommano al turno; un sub-agente non può delegare a sua volta.
+- **Ripresa delle conversazioni**: all'avvio la schermata iniziale propone di riprendere l'ultima conversazione degli
+  ultimi sette giorni (si spegne in Impostazioni → Cervello); in Memoria → Conversazioni ogni conversazione ha
+  «Riprendi». La storia torna nella finestra, strumenti compresi, e il genio continua da lì anche con un altro cervello
+  o dopo un riavvio; se la sessione si era chiusa a metà di un comando, il buco viene chiuso con un esito di errore
+  invece di una storia invalida. Anche il servizio riprende per id (`turn.start` con `resumeConversationId`).
+- **Cambio di cervello a metà conversazione**: la tendina in alto cambia il modello senza perdere la conversazione,
+  anche quando il turno lo esegue il servizio (che prima si accorgeva del cambio solo al salvataggio delle impostazioni).
+- **Copia e selezione del testo**: su ogni messaggio compaiono «Copia» (testo semplice; con il tasto destro anche come
+  Markdown) e «Seleziona il testo», che mostra la risposta come testo semplice selezionabile con il mouse; i tuoi
+  messaggi si selezionano direttamente e ogni blocco di codice ha il suo «Copia». Con il tasto destro sulla
+  conversazione si copia tutta la conversazione o la si salva come file Markdown o testo. La rotellina del mouse scorre
+  la conversazione anche con il puntatore sopra un testo o un blocco di codice.
+- **Il cursore torna nella casella**: finito un turno (o chiuso un pannello, o riportata davanti la finestra) il fuoco
+  torna da solo nella casella del messaggio; prima restava dove WPF l'aveva lasciato quando la casella si spegneva e
+  bisognava cliccarci con il mouse.
+- **Campi e pulsanti più bassi e allineati**: le caselle di testo e delle password uscivano alte 49 px perché il
+  modello applicava due volte il margine interno; ora caselle, tendine e pulsanti sono tutti a 32 px e stanno sulla
+  stessa riga nelle schede delle Impostazioni (modello, «Elenco», chiave API, ruoli dei modelli), nei pannelli e nel
+  compositore, che è più compatto.
+
 ## 0.8.2 · 1 novembre 2026
 
 - **Modello sovraccarico: si riprova da soli**: quando il provider risponde 503 («il modello è molto richiesto»), 429
