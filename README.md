@@ -34,6 +34,14 @@ accenti: file e cartelle con dimensione (cumulativa per le cartelle) e data, ord
 grandezza, data o nome. Lo stesso indice lo usa il genio per rispondere a «i VHDX più grandi» o «cosa
 è cambiato nelle ultime 24 ore» senza scorrere i dischi.
 
+| Il widget flottante | Il tema chiaro |
+|---|---|
+| ![Widget flottante: pillola con orb, casella e microfono, sopra la bolla con la risposta del genio](screenshots/widget.png) | ![La stessa conversazione con il tema chiaro: carta calda, inchiostro e ottone](screenshots/light.png) |
+
+Il widget è una pillola sempre in primo piano per scrivere o dettare al genio senza aprire la
+finestra (Ctrl+Alt+G da qualunque programma); la risposta arriva in una bolla. Il tema si sceglie
+tra scuro, chiaro e automatico, che segue Windows.
+
 Le schermate sono dimostrative: mostrano dati di esempio e un'istantanea dell'interfaccia, che
 con le versioni successive può cambiare nei dettagli.
 
@@ -67,8 +75,9 @@ e confronta il risultato con la riga corrispondente di `SHA256SUMS.txt`.
 
 ## Primo avvio
 
-1. Apri **Impostazioni → Cervello**, inserisci la chiave API del modello scelto e premi
-   «Prova il cervello attivo».
+1. Apri **Impostazioni → Cervello**, inserisci la chiave API del provider scelto, premi «Elenco»
+   accanto al modello per scegliere tra quelli disponibili per la tua chiave (si scaricano dal
+   provider, dal più recente) e poi «Prova il cervello attivo».
 2. In **Impostazioni → Sicurezza** imposta una passphrase per la cassaforte: protegge chiavi e
    credenziali. Con il tuo account Windows la cassaforte si apre da sola; con altri account
    serve la passphrase.
@@ -164,6 +173,13 @@ molte modifiche fallirebbero (te lo segnala e offre il riavvio elevato).
   «Leggi» o tutte da sole con l'interruttore accanto al microfono, e dopo una domanda dettata la
   risposta arriva a voce per una conversazione a mani libere. Nelle Impostazioni → Programma scegli il
   nome del tuo assistente e come deve chiamarti; in Impostazioni → Voce la voce e la velocità.
+- **Widget flottante**: una pillola sempre in primo piano, da tenere dove vuoi sullo schermo, per
+  scrivere o dettare al genio senza aprire la finestra. Mentre scrivi un nome di file mostra i primi
+  risultati dell'indice; la risposta arriva in una bolla con «Leggi», «Copia» e «Apri»; se serve una tua
+  decisione la finestra viene portata davanti. Si mostra e si nasconde dal menu dell'icona o con
+  **Ctrl+Alt+G** da qualunque programma; la posizione si ricorda per monitor.
+- **Tema chiaro, scuro o automatico** (Impostazioni → Programma): la notte della lampada oppure la
+  stessa lampada di giorno, su carta; in automatico segue il tema delle app di Windows.
 
 ## Aggiornamenti
 

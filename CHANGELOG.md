@@ -1,5 +1,35 @@
 # Novità
 
+## 0.8.0 · 1 novembre 2026
+
+- **Widget flottante**: una pillola sempre in primo piano, da tenere dove vuoi sullo schermo (si trascina dall'orb e
+  si attacca ai bordi, la posizione si ricorda per monitor), per scrivere o dettare al genio senza aprire la finestra.
+  Mentre scrivi un nome di file compaiono i primi risultati dell'indice (freccia giù, Invio apre); la risposta arriva
+  in una bolla con «Leggi», «Copia» e «Apri»; se serve una tua decisione la finestra viene portata davanti. Si mostra
+  e si nasconde dal menu dell'icona, con **Ctrl+Alt+G** da qualunque programma o avviando WinGenius con `--widget`;
+  se era in vista alla chiusura ricompare all'avvio. Impostazioni → Widget: tasto rapido, opacità a riposo, risultati
+  dell'indice, bolla, «Riporta nell'angolo». WinGenius ora gira in una sola istanza: lanciarlo di nuovo porta davanti
+  quella aperta.
+- **Elenco dei modelli dai provider**: accanto a ogni modello in Impostazioni → Cervello c'è «Elenco», che scarica dal
+  provider (Anthropic, Google, server OpenAI-compatibili) i modelli disponibili per la tua chiave, dal più recente, e
+  li propone in una tendina; «Aggiorna» lo rilegge quando vuoi e l'ultimo elenco resta anche senza Internet. Niente
+  più nomi da cercare su Internet; scrivere a mano resta possibile.
+- **Tema chiaro, scuro o automatico** (Impostazioni → Programma): Scuro è la notte della lampada, Chiaro la stessa
+  lampada di giorno su carta calda; Automatico segue il tema delle app di Windows e cambia con lui. Si applica subito,
+  finestra, widget e menu compresi; `--theme light|dark|auto` lo forza per una sola esecuzione.
+- **Correzioni**: con il servizio installato un turno partiva e si fermava con «Manca la chiave API» anche se la chiave
+  era salvata, perché la cassaforte del servizio era chiusa: ora il servizio chiede la chiave alla finestra (e la
+  finestra gliela presta appena si collega, se la sua è aperta) e vede le chiavi aggiunte dopo il suo avvio. La tendina
+  del cervello nell'intestazione mostra subito il modello scritto nelle Impostazioni, non quello letto all'avvio. Il
+  pulsante del microfono è nel tema (lo usa anche il widget).
+
+## 0.7.1 · 1 novembre 2026
+
+- **Finestra ingrandita entro l'area di lavoro**: ingrandita, la finestra copriva tutto lo schermo e il compositore con
+  la scheda della memoria finivano sotto la barra delle applicazioni. Ora occupa solo lo spazio libero del monitor su
+  cui sta (anche con la barra in alto o di lato) e il contenuto rientra di quanto la cornice invisibile di Windows
+  sporge davvero, misurato ogni volta.
+
 ## 0.7.0 · 1 novembre 2026
 
 - **Indice dei file**: WinGenius tiene un indice di tutti i file e le cartelle delle unità locali (come la ricerca
