@@ -27,6 +27,13 @@ Prima di toccare qualcosa propone un piano a passi, ognuno con il rischio e il r
 spegnere i passi che non vuoi, aggiungere condizioni o rifiutare. Ogni comando che modifica la
 macchina passa dall'approvazione, con il livello di rischio in evidenza.
 
+![Ricerca istantanea nell'indice dei file: risultati mentre si digita, con dimensioni e date](screenshots/search.png)
+
+La ricerca (lente nella barra laterale, Ctrl+K) risponde mentre scrivi, senza badare a maiuscole e
+accenti: file e cartelle con dimensione (cumulativa per le cartelle) e data, ordinati per pertinenza,
+grandezza, data o nome. Lo stesso indice lo usa il genio per rispondere a «i VHDX più grandi» o «cosa
+è cambiato nelle ultime 24 ore» senza scorrere i dischi.
+
 Le schermate sono dimostrative: mostrano dati di esempio e un'istantanea dell'interfaccia, che
 con le versioni successive può cambiare nei dettagli.
 
@@ -138,6 +145,12 @@ molte modifiche fallirebbero (te lo segnala e offre il riavvio elevato).
   Hyper-V, file server…) con metodo di collegamento e credenziali nella cassaforte; il genio lavora
   su di loro con PowerShell remoto e puoi chiedergli, per esempio, di controllare un controller di
   dominio.
+- **Indice dei file e ricerca istantanea**: WinGenius indicizza file e cartelle delle unità locali
+  (in sottofondo, a bassa priorità, con le dimensioni cumulative delle cartelle) e la lente nella barra
+  laterale (Ctrl+K) trova tutto mentre scrivi: per nome, estensione, più grandi, più recenti. Il genio
+  usa lo stesso indice per rispondere a «i VHDX più grandi», «le cartelle più pesanti», «cosa è
+  cambiato nelle ultime 24 ore» senza scorrere i dischi. Radici, esclusioni e frequenza in
+  Impostazioni → Indice dei file.
 - **Notifiche** per e-mail e Telegram: passi in attesa di approvazione, riavvii avvenuti, piani
   conclusi o falliti, dispositivi nuovi in rete, avvisi di accesso, routine fallite. Si configurano
   e si provano dalle Impostazioni → Notifiche; password e token stanno nella cassaforte. Su Telegram
@@ -182,6 +195,9 @@ spegnere il controllo o farlo subito.
 - Le notifiche escono verso il server SMTP e il bot Telegram che configuri tu, con il testo
   dell'avviso e, su Telegram se lo lasci attivo, un messaggio vocale generato sulla macchina con la
   voce di Windows (nessun servizio esterno di sintesi).
+- L'indice dei file resta sulla macchina (`C:\ProgramData\WinGenius\index`) e contiene solo nomi,
+  percorsi, date e dimensioni, mai il contenuto dei file; il modello vede soltanto i risultati delle
+  ricerche che fa per rispondere alle tue richieste. Spegnendolo dalle Impostazioni viene cancellato.
 - La disinstallazione lascia `C:\ProgramData\WinGenius`: se non ti serve più, eliminala.
 
 ## Avvertenze e limitazione di responsabilità

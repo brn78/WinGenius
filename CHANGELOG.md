@@ -1,5 +1,21 @@
 # Novità
 
+## 0.7.0 · 1 novembre 2026
+
+- **Indice dei file**: WinGenius tiene un indice di tutti i file e le cartelle delle unità locali (come la ricerca
+  istantanea di WinTools, con in più la dimensione di ogni file e quella cumulativa delle cartelle). Si costruisce in
+  sottofondo a bassa priorità, si aggiorna da solo seguendo le modifiche del disco e si rilegge per intero a orario;
+  quando il servizio è installato è lui a tenerlo, così vede tutti i file anche a finestra chiusa. Impostazioni →
+  Indice dei file: radici (anche di rete), cartelle da saltare, nascosti, frequenza, stato e «Aggiorna ora».
+- **Ricerca** (lente nella barra laterale, Ctrl+K): i risultati compaiono mentre si digita, senza badare a maiuscole
+  e accenti, con filtri per file o cartelle e ordine per pertinenza, più grandi, più recenti o nome. «Più grandi»
+  senza testo mostra dove va lo spazio. Invio apre, Ctrl+Invio mostra in Esplora, Ctrl+C copia il percorso, «Chiedi
+  al genio» porta la voce nella conversazione.
+- **Il genio cerca con l'indice**: nuovi strumenti `find_paths` (parole, tipo, estensioni, dimensione, data,
+  cartella, ordine), `index_status` e `index_refresh`; il prompt gli dice di usarli invece di Get-ChildItem
+  ricorsivo. «I VHDX più grandi», «le cartelle più pesanti», «i file toccati nelle ultime 24 ore» si rispondono
+  con una chiamata.
+
 ## 0.6.0 · 31 ottobre 2026
 
 - **La voce di WinGenius**: le risposte si possono ascoltare con una voce di Windows. Su ogni risposta compare il
