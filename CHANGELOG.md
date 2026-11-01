@@ -1,5 +1,21 @@
 # Novità
 
+## 0.9.1 · 1 novembre 2026
+
+- **Claude e gli strumenti**: con un account Anthropic recente il secondo passo di ogni turno con un comando veniva
+  rifiutato («400: Invalid `signature` in thinking block»). Claude lega la firma dei blocchi di ragionamento al prompt
+  di sistema e agli strumenti della richiesta, e WinGenius ricostruiva il prompt a ogni passo (la memoria si aggiorna a
+  ogni comando, la data e l'ora scorrono). Ora il prompt di sistema si costruisce una volta per turno, i blocchi di
+  ragionamento dei turni precedenti non si rimandano (Claude li scarta comunque) e, se una firma viene rifiutata lo
+  stesso, la richiesta si ripete una volta senza blocchi invece di fermarsi.
+- **Avvia sempre come amministratore** (Impostazioni → Programma): Windows non ricorda l'elevazione, quindi a ogni
+  avvio (collegamento, avvio automatico, riavvio dopo un aggiornamento) WinGenius ripartiva normale e proponeva di
+  nuovo lo scudo. Ora la prima volta che accetti il riavvio come amministratore registra un'attività pianificata con
+  privilegi elevati e da allora riparte da solo elevato, senza richieste di Windows; l'opzione si spegne dalle
+  Impostazioni, `--no-elevate` la ignora per una volta e la disinstallazione rimuove l'attività.
+- **Avviso «non sto girando come amministratore»**: non compare più quando la finestra è collegata al servizio, che
+  esegue i comandi elevato.
+
 ## 0.9.0 · 1 novembre 2026
 
 - **Stile delle risposte** (Impostazioni → Cervello): Professionale, Tecnico, Alla mano, Conciso oppure Personalizzato

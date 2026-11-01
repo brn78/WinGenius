@@ -88,7 +88,10 @@ e confronta il risultato con la riga corrispondente di `SHA256SUMS.txt`.
    *Verifica i backup*.
 
 Per lavorare davvero su un server, avvialo come amministratore: senza elevazione analizza ma
-molte modifiche fallirebbero (te lo segnala e offre il riavvio elevato).
+molte modifiche fallirebbero (te lo segnala e offre il riavvio elevato). La prima volta che accetti
+il riavvio elevato WinGenius se lo ricorda: da allora riparte da solo come amministratore, senza la
+richiesta di Windows a ogni avvio (Impostazioni → Programma → «Avvia sempre come amministratore»
+per cambiare idea). Con il servizio installato l'avviso non serve: i comandi li esegue il servizio.
 
 ## Come lavora
 
