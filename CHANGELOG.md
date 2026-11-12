@@ -1,5 +1,28 @@
 # Novità
 
+## 1.2.0 · 12 novembre 2026
+
+- **Watchdog del turno: se il genio si ferma, riparte da solo.** Quando una richiesta al modello va male (rete caduta,
+  flusso interrotto a metà, attesa scaduta, errore interno) o resta muta troppo a lungo, il passo viene ripetuto senza
+  aspettare che qualcuno se ne accorga: fino a due riprese per turno, dette nella linea del tempo («Mi ero fermato:
+  riprendo da solo») con il motivo. Il silenzio massimo del modello è di sei minuti (`ModelSilenceSeconds` in
+  settings.json; 0 lo spegne, con un server locale lento conviene alzarlo). Chiave, modello o richiesta sbagliati non
+  si riprovano: l'errore arriva subito. Un'attesa scaduta non viene più mostrata come «Turno interrotto».
+- **Controllo preventivo degli script**: prima di chiedere l'approvazione, e prima di partire, uno script che modifica
+  la macchina viene analizzato senza eseguirlo. Errori di sintassi e comandi che qui non esistono tornano al genio con
+  riga e motivo, e sulla macchina non cambia nulla: niente più script che fanno il primo passo e si fermano al
+  secondo. Costa circa mezzo secondo; i comandi di sola lettura non lo pagano (`PreflightScripts` in settings.json).
+- **Corretto «Index was out of range» a metà turno**: la memoria su disco era usata insieme da più parti del programma
+  (agente, finestra, scansioni, routine) senza protezione, e ogni tanto una scrittura saltava fermando il lavoro. Ora
+  gli accessi sono in fila e ogni inserimento riceve il proprio numero; se una scrittura di registro fallisce comunque,
+  il turno continua e lo dice una volta sola.
+- **Una risposta, una bolla**: la stessa risposta non compare più due volte in conversazione, né spezzata in un primo
+  frammento e nel testo completo; una domanda che il genio ha appena scritto non viene ripetuta sopra la casella della
+  risposta, e una richiesta riproposta dal servizio dopo un ricollegamento non apre una seconda finestra.
+- **Dopo «Ferma» la conversazione resta valida**: interrompere il genio mentre usa gli strumenti non lascia più
+  chiamate a metà, che al messaggio successivo facevano rifiutare la richiesta dal modello. Un'attesa scaduta dentro
+  uno strumento torna al genio come esito, invece di chiudere il turno.
+
 ## 1.1.0 · 1 novembre 2026
 
 - **Risposte da Telegram** (Impostazioni → Notifiche → «Risposte da Telegram»): quando una richiesta del genio aspetta te

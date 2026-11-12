@@ -108,6 +108,12 @@ per cambiare idea). Con il servizio installato l'avviso non serve: i comandi li 
 - **Ogni comando è classificato**: sola lettura, modifica o pericoloso. In base alla politica
   scelta ti mostra il comando e aspetta la tua approvazione. Riavvii, cancellazioni, dischi,
   VM, firewall e utenti chiedono sempre conferma.
+- **Controlla gli script prima di eseguirli**: uno script che modifica la macchina viene
+  analizzato senza eseguirlo. Se ha errori di sintassi o chiama comandi che non esistono non
+  parte nemmeno, così non resta un lavoro fatto a metà.
+- **Se si ferma, riparte da solo**: quando la richiesta al modello cade o resta muta troppo a
+  lungo, il genio la ripete senza aspettare che qualcuno se ne accorga e lo scrive in
+  conversazione.
 - **Prima di intervenire propone un piano** con passi, rischio e come tornare indietro: puoi
   approvarlo, spegnere singoli passi, scrivere condizioni («manda i file nel cestino», «fermati
   dopo il passo 2») o rifiutarlo con un commento. Quello che scrivi prevale sul piano: il genio lo
